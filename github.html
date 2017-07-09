@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <style>
+            body, html {
+                background: #2B3137;
+                font-family: Arial;
+                margin: 0;
+            }
+            .menu-content,
+            .main-content {
+                padding: 0 90px;
+                display:flex;
+            }
+            .menu-content {
+                height: 60px;
+
+            }
+            .menu-bar {
+                background: #24292E;
+                color: white;
+                font-weight: bold;
+
+            }
+            .menu-item {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+            .menu-left {
+                display: flex;
+                align-items: center;
+            }
+            .menu-spacer {
+                flex: 1;
+            }
+            .menu-right {
+                display: flex;
+                align-items: center;
+            }
+            .menu-input {
+                border: none;
+                background: #404448;
+                padding: 8px;
+                border-radius: 3px;
+                
+            }
+            .menu-input:focus {
+                border: none;
+                
+            }
+            .menu-item__middletext {
+                font-weight: normal;
+                color: darkgrey;
+            }
+            .main-content {
+                margin-top: 70px;
+                align-items: flex-start;
+            }
+            .main-left,
+            .main-right {
+                flex: 1;
+            }
+            .main-left {
+                margin-right: 10px;
+            }
+            .main-left h1 {
+                color: white;
+                font-size: 72px;
+            }
+            .main-left p {
+                color: darkgray;
+                font-size: 20px;
+                line-height: 1.5;
+                margin: 0;
+            }
+            .main-left a {
+                color: white;
+            }
+            .main-right {
+                margin-left: 10px;
+                border-radius: 3px;
+                background: #FAFBFC;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: stretch;
+            }
+            .main-right input {
+                padding: 12px;
+                border-radius: 4px;
+                margin-bottom: 18px;
+                border: 1px solid silver;
+                font-size: 15px;
+            }
+            .main-right label {
+                color: darkgray;
+            }
+            .signup-button {
+                background-color: #2CB64C;
+                color: white;
+                text-align: center;
+                padding: 8px;
+                border: 1px solid #2FAD4D;
+                border-radius: 4px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu-bar">
+            <div class="menu-content">
+                <div class="menu-left">
+                    <span class="menu-item">Features</span>
+                    <span class="menu-item">Business</span>
+                </div>
+                <div class="menu-spacer"></div>
+                <div class="menu-right">
+                    <input class="menu-input menu-item" placeholder="Search">
+                    <span  class="menu-item">
+                        Login <span class="menu-item__middletext">or</span> Sign up
+                    </span>
+                </div> 
+            </div>
+           
+        </div>
+        <div class="main-content">
+            <div class="main-left">
+                <h1>Built for developers</h1>
+                <p>
+                    Github is a developing platform inspired by the way you work. 
+                    From <a>Open Source</a> to <a>Business</a>, you can host and review code, 
+                    manage projects, and build software alongside millions of 
+                    other developers.
+                </p>
+            </div>
+            <div class="main-right">
+                <label>Name</label>
+                <input placeholder="Pick a username"> 
+                <label>Email</label>
+                <input placeholder="Pick an email"> 
+                <label>Password</label>
+                <input placeholder="Pick a Password">
+                <button class="signup-button">Sign up for Github</button>
+            </div>
+        </div>
+    </body>
+</html>
